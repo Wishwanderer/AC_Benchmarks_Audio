@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0.0",
+  "result_id": "ACR-002__opus__6k",
+  "synthetic": true,
+  "source": {
+    "source_id": "ACR-002",
+    "filename": "ACR-002_female_narration.wav",
+    "sha256": "d082c9e0573440b2cd091e4f6f3c5680dad67f758eed2bf59cdd90cac9a9576d"
+  },
+  "codec": {
+    "name": "opus",
+    "encoder": "libopus",
+    "encoder_version": "1.5.2",
+    "mode": "vbr",
+    "setting": "6k",
+    "nominal_bitrate_kbps": 6,
+    "command": "<placeholder> encode --codec opus --setting 6k ACR-002_female_narration.wav"
+  },
+  "output": {
+    "path": "results/opus/ACR-002/ACR-002__opus__6k.opus",
+    "container": "opus",
+    "artifact_bytes": 2048,
+    "artifact_sha256": "4a19271aa86cf88650743764f808457910ac5ecd05c833c90fffc4146545c0e1",
+    "estimated_encoded_bytes": 13311,
+    "measured_bitrate_kbps": 6.36,
+    "compression_ratio": 120.802
+  },
+  "quality": {
+    "peaq_odg": -2.617,
+    "visqol_mos": 2.049,
+    "snr_db": 10.88,
+    "bit_exact": false
+  },
+  "performance": {
+    "encode_speed_x_realtime": 119.3,
+    "decode_speed_x_realtime": 567.0
+  },
+  "environment": {
+    "host": "placeholder-runner-01",
+    "cpu": "TBD",
+    "os": "TBD"
+  },
+  "created_utc": "2026-11-21T09:11:06Z"
+}

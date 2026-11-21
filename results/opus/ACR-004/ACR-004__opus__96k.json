@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0.0",
+  "result_id": "ACR-004__opus__96k",
+  "synthetic": true,
+  "source": {
+    "source_id": "ACR-004",
+    "filename": "ACR-004_podcast_excerpt.wav",
+    "sha256": "83d31ce2e41f213467f73477713f252029348971a5dc6233bd0da9580fe041c2"
+  },
+  "codec": {
+    "name": "opus",
+    "encoder": "libopus",
+    "encoder_version": "1.5.2",
+    "mode": "vbr",
+    "setting": "96k",
+    "nominal_bitrate_kbps": 96,
+    "command": "<placeholder> encode --codec opus --setting 96k ACR-004_podcast_excerpt.wav"
+  },
+  "output": {
+    "path": "results/opus/ACR-004/ACR-004__opus__96k.opus",
+    "container": "opus",
+    "artifact_bytes": 2048,
+    "artifact_sha256": "0b6f9672828a3eab72317edfe179fcf93c9593aaf5636d011a256a5e29015825",
+    "estimated_encoded_bytes": 212624,
+    "measured_bitrate_kbps": 98.71,
+    "compression_ratio": 7.78
+  },
+  "quality": {
+    "peaq_odg": -0.116,
+    "visqol_mos": 4.655,
+    "snr_db": 34.47,
+    "bit_exact": false
+  },
+  "performance": {
+    "encode_speed_x_realtime": 119.1,
+    "decode_speed_x_realtime": 335.2
+  },
+  "environment": {
+    "host": "placeholder-runner-01",
+    "cpu": "TBD",
+    "os": "TBD"
+  },
+  "created_utc": "2026-11-21T09:35:46Z"
+}

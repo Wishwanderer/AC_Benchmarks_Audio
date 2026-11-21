@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0.0",
+  "result_id": "ACR-001__opus__48k",
+  "synthetic": true,
+  "source": {
+    "source_id": "ACR-001",
+    "filename": "ACR-001_male_narration.wav",
+    "sha256": "98041490aac3c3d5c80a7483bef6dd82adbbb8f435177a224dc0a1f31198084d"
+  },
+  "codec": {
+    "name": "opus",
+    "encoder": "libopus",
+    "encoder_version": "1.5.2",
+    "mode": "vbr",
+    "setting": "48k",
+    "nominal_bitrate_kbps": 48,
+    "command": "<placeholder> encode --codec opus --setting 48k ACR-001_male_narration.wav"
+  },
+  "output": {
+    "path": "results/opus/ACR-001/ACR-001__opus__48k.opus",
+    "container": "opus",
+    "artifact_bytes": 2048,
+    "artifact_sha256": "e9f05099055f2717aae601dcf46f10d211ae1416377d6f23498ec823de80733a",
+    "estimated_encoded_bytes": 86777,
+    "measured_bitrate_kbps": 44.45,
+    "compression_ratio": 17.278
+  },
+  "quality": {
+    "peaq_odg": -0.435,
+    "visqol_mos": 4.276,
+    "snr_db": 29.01,
+    "bit_exact": false
+  },
+  "performance": {
+    "encode_speed_x_realtime": 154.0,
+    "decode_speed_x_realtime": 526.8
+  },
+  "environment": {
+    "host": "placeholder-runner-01",
+    "cpu": "TBD",
+    "os": "TBD"
+  },
+  "created_utc": "2026-11-21T09:01:51Z"
+}

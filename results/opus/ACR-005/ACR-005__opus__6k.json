@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0.0",
+  "result_id": "ACR-005__opus__6k",
+  "synthetic": true,
+  "source": {
+    "source_id": "ACR-005",
+    "filename": "ACR-005_solo_piano.wav",
+    "sha256": "7583fb140cadf93158f74c927960967863504d4c12f37b276ef57c675db49290"
+  },
+  "codec": {
+    "name": "opus",
+    "encoder": "libopus",
+    "encoder_version": "1.5.2",
+    "mode": "vbr",
+    "setting": "6k",
+    "nominal_bitrate_kbps": 6,
+    "command": "<placeholder> encode --codec opus --setting 6k ACR-005_solo_piano.wav"
+  },
+  "output": {
+    "path": "results/opus/ACR-005/ACR-005__opus__6k.opus",
+    "container": "opus",
+    "artifact_bytes": 2048,
+    "artifact_sha256": "f44c723e852d74d92126d48d324fe4400667278362da248a3d5226968c715d65",
+    "estimated_encoded_bytes": 15634,
+    "measured_bitrate_kbps": 5.71,
+    "compression_ratio": 247.145
+  },
+  "quality": {
+    "peaq_odg": -3.447,
+    "visqol_mos": 1.283,
+    "snr_db": 4.39,
+    "bit_exact": false
+  },
+  "performance": {
+    "encode_speed_x_realtime": 139.5,
+    "decode_speed_x_realtime": 572.4
+  },
+  "environment": {
+    "host": "placeholder-runner-01",
+    "cpu": "TBD",
+    "os": "TBD"
+  },
+  "created_utc": "2026-11-21T09:44:24Z"
+}
