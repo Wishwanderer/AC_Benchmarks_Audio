@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0.0",
+  "result_id": "ACR-001__vorbis__q5",
+  "synthetic": true,
+  "source": {
+    "source_id": "ACR-001",
+    "filename": "ACR-001_male_narration.wav",
+    "sha256": "98041490aac3c3d5c80a7483bef6dd82adbbb8f435177a224dc0a1f31198084d"
+  },
+  "codec": {
+    "name": "vorbis",
+    "encoder": "libvorbis",
+    "encoder_version": "1.3.7",
+    "mode": "vbr",
+    "setting": "q5",
+    "nominal_bitrate_kbps": 160,
+    "command": "<placeholder> encode --codec vorbis --setting q5 ACR-001_male_narration.wav"
+  },
+  "output": {
+    "path": "results/vorbis/ACR-001/ACR-001__vorbis__q5.ogg",
+    "container": "ogg",
+    "artifact_bytes": 2048,
+    "artifact_sha256": "02461ad23065f61d5ff934c6270415a9ae219fdcdb77deb635a06f750de5bc48",
+    "estimated_encoded_bytes": 279360,
+    "measured_bitrate_kbps": 143.1,
+    "compression_ratio": 5.367
+  },
+  "quality": {
+    "peaq_odg": 0.0,
+    "visqol_mos": 4.75,
+    "snr_db": 36.43,
+    "bit_exact": false
+  },
+  "performance": {
+    "encode_speed_x_realtime": 40.4,
+    "decode_speed_x_realtime": 179.2
+  },
+  "environment": {
+    "host": "placeholder-runner-01",
+    "cpu": "TBD",
+    "os": "TBD"
+  },
+  "created_utc": "2026-11-21T09:08:01Z"
+}

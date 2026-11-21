@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0.0",
+  "result_id": "ACR-004__vorbis__q5",
+  "synthetic": true,
+  "source": {
+    "source_id": "ACR-004",
+    "filename": "ACR-004_podcast_excerpt.wav",
+    "sha256": "83d31ce2e41f213467f73477713f252029348971a5dc6233bd0da9580fe041c2"
+  },
+  "codec": {
+    "name": "vorbis",
+    "encoder": "libvorbis",
+    "encoder_version": "1.3.7",
+    "mode": "vbr",
+    "setting": "q5",
+    "nominal_bitrate_kbps": 160,
+    "command": "<placeholder> encode --codec vorbis --setting q5 ACR-004_podcast_excerpt.wav"
+  },
+  "output": {
+    "path": "results/vorbis/ACR-004/ACR-004__vorbis__q5.ogg",
+    "container": "ogg",
+    "artifact_bytes": 2048,
+    "artifact_sha256": "5f0477a98772bec775ead0923a1409a05946f4c4568a9235a6da9d01de9a296c",
+    "estimated_encoded_bytes": 340378,
+    "measured_bitrate_kbps": 158.02,
+    "compression_ratio": 4.86
+  },
+  "quality": {
+    "peaq_odg": 0.0,
+    "visqol_mos": 4.75,
+    "snr_db": 34.52,
+    "bit_exact": false
+  },
+  "performance": {
+    "encode_speed_x_realtime": 51.4,
+    "decode_speed_x_realtime": 169.1
+  },
+  "environment": {
+    "host": "placeholder-runner-01",
+    "cpu": "TBD",
+    "os": "TBD"
+  },
+  "created_utc": "2026-11-21T09:41:19Z"
+}

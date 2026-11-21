@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0.0",
+  "result_id": "ACR-002__vorbis__q2",
+  "synthetic": true,
+  "source": {
+    "source_id": "ACR-002",
+    "filename": "ACR-002_female_narration.wav",
+    "sha256": "d082c9e0573440b2cd091e4f6f3c5680dad67f758eed2bf59cdd90cac9a9576d"
+  },
+  "codec": {
+    "name": "vorbis",
+    "encoder": "libvorbis",
+    "encoder_version": "1.3.7",
+    "mode": "vbr",
+    "setting": "q2",
+    "nominal_bitrate_kbps": 96,
+    "command": "<placeholder> encode --codec vorbis --setting q2 ACR-002_female_narration.wav"
+  },
+  "output": {
+    "path": "results/vorbis/ACR-002/ACR-002__vorbis__q2.ogg",
+    "container": "ogg",
+    "artifact_bytes": 2048,
+    "artifact_sha256": "95c4aab79e9bb1b8d8fa4f5cca18faabddaf7198cdf483286b0d8a2d4fc69787",
+    "estimated_encoded_bytes": 216009,
+    "measured_bitrate_kbps": 103.17,
+    "compression_ratio": 7.444
+  },
+  "quality": {
+    "peaq_odg": -0.217,
+    "visqol_mos": 4.591,
+    "snr_db": 35.73,
+    "bit_exact": false
+  },
+  "performance": {
+    "encode_speed_x_realtime": 42.2,
+    "decode_speed_x_realtime": 193.5
+  },
+  "environment": {
+    "host": "placeholder-runner-01",
+    "cpu": "TBD",
+    "os": "TBD"
+  },
+  "created_utc": "2026-11-21T09:18:30Z"
+}

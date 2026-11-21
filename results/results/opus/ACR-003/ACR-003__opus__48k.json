@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0.0",
+  "result_id": "ACR-003__opus__48k",
+  "synthetic": true,
+  "source": {
+    "source_id": "ACR-003",
+    "filename": "ACR-003_conversational_dialogue.wav",
+    "sha256": "1e7d69042237ce7dbf7c40f72506d68de87102177c2f6dd15177613a1ac4765b"
+  },
+  "codec": {
+    "name": "opus",
+    "encoder": "libopus",
+    "encoder_version": "1.5.2",
+    "mode": "vbr",
+    "setting": "48k",
+    "nominal_bitrate_kbps": 48,
+    "command": "<placeholder> encode --codec opus --setting 48k ACR-003_conversational_dialogue.wav"
+  },
+  "output": {
+    "path": "results/opus/ACR-003/ACR-003__opus__48k.opus",
+    "container": "opus",
+    "artifact_bytes": 2048,
+    "artifact_sha256": "47abb82a61c06995601abb545afe06b0a918f7a4799a16a28c1e71205790b946",
+    "estimated_encoded_bytes": 180640,
+    "measured_bitrate_kbps": 49.47,
+    "compression_ratio": 15.525
+  },
+  "quality": {
+    "peaq_odg": -0.564,
+    "visqol_mos": 4.101,
+    "snr_db": 30.54,
+    "bit_exact": false
+  },
+  "performance": {
+    "encode_speed_x_realtime": 124.5,
+    "decode_speed_x_realtime": 327.5
+  },
+  "environment": {
+    "host": "placeholder-runner-01",
+    "cpu": "TBD",
+    "os": "TBD"
+  },
+  "created_utc": "2026-11-21T09:24:03Z"
+}
