@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0.0",
+  "result_id": "ACR-005__aac_lc__64k",
+  "synthetic": true,
+  "source": {
+    "source_id": "ACR-005",
+    "filename": "ACR-005_solo_piano.wav",
+    "sha256": "7583fb140cadf93158f74c927960967863504d4c12f37b276ef57c675db49290"
+  },
+  "codec": {
+    "name": "aac_lc",
+    "encoder": "fdk-aac",
+    "encoder_version": "2.0.3",
+    "mode": "cbr",
+    "setting": "64k",
+    "nominal_bitrate_kbps": 64,
+    "command": "<placeholder> encode --codec aac_lc --setting 64k ACR-005_solo_piano.wav"
+  },
+  "output": {
+    "path": "results/aac_lc/ACR-005/ACR-005__aac_lc__64k.m4a",
+    "container": "m4a",
+    "artifact_bytes": 2048,
+    "artifact_sha256": "2749d6051bcc268ca4fad006204497037bb9107c9d12d7c6e82bdcd8bdc12bdb",
+    "estimated_encoded_bytes": 174431,
+    "measured_bitrate_kbps": 63.71,
+    "compression_ratio": 22.151
+  },
+  "quality": {
+    "peaq_odg": -1.203,
+    "visqol_mos": 3.445,
+    "snr_db": 24.23,
+    "bit_exact": false
+  },
+  "performance": {
+    "encode_speed_x_realtime": 90.7,
+    "decode_speed_x_realtime": 317.3
+  },
+  "environment": {
+    "host": "placeholder-runner-01",
+    "cpu": "TBD",
+    "os": "TBD"
+  },
+  "created_utc": "2026-11-21T09:47:29Z"
+}

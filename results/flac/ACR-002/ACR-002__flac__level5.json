@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0.0",
+  "result_id": "ACR-002__flac__level5",
+  "synthetic": true,
+  "source": {
+    "source_id": "ACR-002",
+    "filename": "ACR-002_female_narration.wav",
+    "sha256": "d082c9e0573440b2cd091e4f6f3c5680dad67f758eed2bf59cdd90cac9a9576d"
+  },
+  "codec": {
+    "name": "flac",
+    "encoder": "libFLAC",
+    "encoder_version": "1.4.3",
+    "mode": "lossless",
+    "setting": "level5",
+    "nominal_bitrate_kbps": null,
+    "command": "<placeholder> encode --codec flac --setting level5 ACR-002_female_narration.wav"
+  },
+  "output": {
+    "path": "results/flac/ACR-002/ACR-002__flac__level5.flac",
+    "container": "flac",
+    "artifact_bytes": 2048,
+    "artifact_sha256": "d16868a75df7f5d0ee6454f620f87fd68ed48a5fee04c74b7f223975c6f73b21",
+    "estimated_encoded_bytes": 926173,
+    "measured_bitrate_kbps": 442.35,
+    "compression_ratio": 1.736
+  },
+  "quality": {
+    "peaq_odg": 0.0,
+    "visqol_mos": 4.75,
+    "snr_db": null,
+    "bit_exact": true
+  },
+  "performance": {
+    "encode_speed_x_realtime": 156.2,
+    "decode_speed_x_realtime": 814.0
+  },
+  "environment": {
+    "host": "placeholder-runner-01",
+    "cpu": "TBD",
+    "os": "TBD"
+  },
+  "created_utc": "2026-11-21T09:20:58Z"
+}

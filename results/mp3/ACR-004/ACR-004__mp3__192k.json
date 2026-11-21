@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0.0",
+  "result_id": "ACR-004__mp3__192k",
+  "synthetic": true,
+  "source": {
+    "source_id": "ACR-004",
+    "filename": "ACR-004_podcast_excerpt.wav",
+    "sha256": "83d31ce2e41f213467f73477713f252029348971a5dc6233bd0da9580fe041c2"
+  },
+  "codec": {
+    "name": "mp3",
+    "encoder": "lame",
+    "encoder_version": "3.100",
+    "mode": "cbr",
+    "setting": "192k",
+    "nominal_bitrate_kbps": 192,
+    "command": "<placeholder> encode --codec mp3 --setting 192k ACR-004_podcast_excerpt.wav"
+  },
+  "output": {
+    "path": "results/mp3/ACR-004/ACR-004__mp3__192k.mp3",
+    "container": "mp3",
+    "artifact_bytes": 2048,
+    "artifact_sha256": "65cc957c49199f95a882ab336655a57c286dd0fc1dd671ee28faf1219cf94df5",
+    "estimated_encoded_bytes": 413262,
+    "measured_bitrate_kbps": 191.86,
+    "compression_ratio": 4.003
+  },
+  "quality": {
+    "peaq_odg": 0.0,
+    "visqol_mos": 4.75,
+    "snr_db": 35.73,
+    "bit_exact": false
+  },
+  "performance": {
+    "encode_speed_x_realtime": 56.3,
+    "decode_speed_x_realtime": 142.7
+  },
+  "environment": {
+    "host": "placeholder-runner-01",
+    "cpu": "TBD",
+    "os": "TBD"
+  },
+  "created_utc": "2026-11-21T09:39:28Z"
+}

@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0.0",
+  "result_id": "ACR-002__aac_lc__128k",
+  "synthetic": true,
+  "source": {
+    "source_id": "ACR-002",
+    "filename": "ACR-002_female_narration.wav",
+    "sha256": "d082c9e0573440b2cd091e4f6f3c5680dad67f758eed2bf59cdd90cac9a9576d"
+  },
+  "codec": {
+    "name": "aac_lc",
+    "encoder": "fdk-aac",
+    "encoder_version": "2.0.3",
+    "mode": "cbr",
+    "setting": "128k",
+    "nominal_bitrate_kbps": 128,
+    "command": "<placeholder> encode --codec aac_lc --setting 128k ACR-002_female_narration.wav"
+  },
+  "output": {
+    "path": "results/aac_lc/ACR-002/ACR-002__aac_lc__128k.m4a",
+    "container": "m4a",
+    "artifact_bytes": 2048,
+    "artifact_sha256": "723cee7ca25ab05c147f0de8cab796ed7b40f77d5e5100bee3a74a56578b91f9",
+    "estimated_encoded_bytes": 261389,
+    "measured_bitrate_kbps": 124.84,
+    "compression_ratio": 6.152
+  },
+  "quality": {
+    "peaq_odg": 0.0,
+    "visqol_mos": 4.695,
+    "snr_db": 37.03,
+    "bit_exact": false
+  },
+  "performance": {
+    "encode_speed_x_realtime": 102.8,
+    "decode_speed_x_realtime": 267.4
+  },
+  "environment": {
+    "host": "placeholder-runner-01",
+    "cpu": "TBD",
+    "os": "TBD"
+  },
+  "created_utc": "2026-11-21T09:14:48Z"
+}

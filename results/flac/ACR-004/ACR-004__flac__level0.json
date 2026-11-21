@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0.0",
+  "result_id": "ACR-004__flac__level0",
+  "synthetic": true,
+  "source": {
+    "source_id": "ACR-004",
+    "filename": "ACR-004_podcast_excerpt.wav",
+    "sha256": "83d31ce2e41f213467f73477713f252029348971a5dc6233bd0da9580fe041c2"
+  },
+  "codec": {
+    "name": "flac",
+    "encoder": "libFLAC",
+    "encoder_version": "1.4.3",
+    "mode": "lossless",
+    "setting": "level0",
+    "nominal_bitrate_kbps": null,
+    "command": "<placeholder> encode --codec flac --setting level0 ACR-004_podcast_excerpt.wav"
+  },
+  "output": {
+    "path": "results/flac/ACR-004/ACR-004__flac__level0.flac",
+    "container": "flac",
+    "artifact_bytes": 2048,
+    "artifact_sha256": "28bbf5c55c850995730487e2105faa8d2c0b08f40d5497c67ff1413c7a2790ec",
+    "estimated_encoded_bytes": 1188061,
+    "measured_bitrate_kbps": 551.56,
+    "compression_ratio": 1.392
+  },
+  "quality": {
+    "peaq_odg": 0.0,
+    "visqol_mos": 4.75,
+    "snr_db": null,
+    "bit_exact": true
+  },
+  "performance": {
+    "encode_speed_x_realtime": 458.3,
+    "decode_speed_x_realtime": 2409.8
+  },
+  "environment": {
+    "host": "placeholder-runner-01",
+    "cpu": "TBD",
+    "os": "TBD"
+  },
+  "created_utc": "2026-11-21T09:42:33Z"
+}

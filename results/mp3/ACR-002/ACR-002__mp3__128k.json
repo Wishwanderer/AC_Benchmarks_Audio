@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0.0",
+  "result_id": "ACR-002__mp3__128k",
+  "synthetic": true,
+  "source": {
+    "source_id": "ACR-002",
+    "filename": "ACR-002_female_narration.wav",
+    "sha256": "d082c9e0573440b2cd091e4f6f3c5680dad67f758eed2bf59cdd90cac9a9576d"
+  },
+  "codec": {
+    "name": "mp3",
+    "encoder": "lame",
+    "encoder_version": "3.100",
+    "mode": "cbr",
+    "setting": "128k",
+    "nominal_bitrate_kbps": 128,
+    "command": "<placeholder> encode --codec mp3 --setting 128k ACR-002_female_narration.wav"
+  },
+  "output": {
+    "path": "results/mp3/ACR-002/ACR-002__mp3__128k.mp3",
+    "container": "mp3",
+    "artifact_bytes": 2048,
+    "artifact_sha256": "61f1aaaa0df1d82072942b76fca7ef9387e7202f45f5b85b91d8034e8e51cbc5",
+    "estimated_encoded_bytes": 266696,
+    "measured_bitrate_kbps": 127.38,
+    "compression_ratio": 6.029
+  },
+  "quality": {
+    "peaq_odg": -0.061,
+    "visqol_mos": 4.654,
+    "snr_db": 36.51,
+    "bit_exact": false
+  },
+  "performance": {
+    "encode_speed_x_realtime": 54.7,
+    "decode_speed_x_realtime": 176.1
+  },
+  "environment": {
+    "host": "placeholder-runner-01",
+    "cpu": "TBD",
+    "os": "TBD"
+  },
+  "created_utc": "2026-11-21T09:16:39Z"
+}

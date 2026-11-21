@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0.0",
+  "result_id": "ACR-005__flac__level0",
+  "synthetic": true,
+  "source": {
+    "source_id": "ACR-005",
+    "filename": "ACR-005_solo_piano.wav",
+    "sha256": "7583fb140cadf93158f74c927960967863504d4c12f37b276ef57c675db49290"
+  },
+  "codec": {
+    "name": "flac",
+    "encoder": "libFLAC",
+    "encoder_version": "1.4.3",
+    "mode": "lossless",
+    "setting": "level0",
+    "nominal_bitrate_kbps": null,
+    "command": "<placeholder> encode --codec flac --setting level0 ACR-005_solo_piano.wav"
+  },
+  "output": {
+    "path": "results/flac/ACR-005/ACR-005__flac__level0.flac",
+    "container": "flac",
+    "artifact_bytes": 2048,
+    "artifact_sha256": "56ef221a099b54c8c5298855d4e88cbb8457e9f0648efd116e553f81e7ab8310",
+    "estimated_encoded_bytes": 2556682,
+    "measured_bitrate_kbps": 933.78,
+    "compression_ratio": 1.511
+  },
+  "quality": {
+    "peaq_odg": 0.0,
+    "visqol_mos": 4.75,
+    "snr_db": null,
+    "bit_exact": true
+  },
+  "performance": {
+    "encode_speed_x_realtime": 361.1,
+    "decode_speed_x_realtime": 977.5
+  },
+  "environment": {
+    "host": "placeholder-runner-01",
+    "cpu": "TBD",
+    "os": "TBD"
+  },
+  "created_utc": "2026-11-21T09:53:39Z"
+}

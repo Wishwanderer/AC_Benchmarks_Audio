@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0.0",
+  "result_id": "ACR-003__flac__level5",
+  "synthetic": true,
+  "source": {
+    "source_id": "ACR-003",
+    "filename": "ACR-003_conversational_dialogue.wav",
+    "sha256": "1e7d69042237ce7dbf7c40f72506d68de87102177c2f6dd15177613a1ac4765b"
+  },
+  "codec": {
+    "name": "flac",
+    "encoder": "libFLAC",
+    "encoder_version": "1.4.3",
+    "mode": "lossless",
+    "setting": "level5",
+    "nominal_bitrate_kbps": null,
+    "command": "<placeholder> encode --codec flac --setting level5 ACR-003_conversational_dialogue.wav"
+  },
+  "output": {
+    "path": "results/flac/ACR-003/ACR-003__flac__level5.flac",
+    "container": "flac",
+    "artifact_bytes": 2048,
+    "artifact_sha256": "e41b45514e4d6850bf88088e11c144f88685ba9e7f6070858d4269f6cd3d43e9",
+    "estimated_encoded_bytes": 1584109,
+    "measured_bitrate_kbps": 433.81,
+    "compression_ratio": 1.77
+  },
+  "quality": {
+    "peaq_odg": 0.0,
+    "visqol_mos": 4.75,
+    "snr_db": null,
+    "bit_exact": true
+  },
+  "performance": {
+    "encode_speed_x_realtime": 143.0,
+    "decode_speed_x_realtime": 563.9
+  },
+  "environment": {
+    "host": "placeholder-runner-01",
+    "cpu": "TBD",
+    "os": "TBD"
+  },
+  "created_utc": "2026-11-21T09:32:04Z"
+}

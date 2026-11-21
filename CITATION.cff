@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it as below."
+title: "Audio Compression Results"
+type: dataset
+version: 0.1.0
+date-released: 2026-11-21
+authors:
+  - name: "<AUTHOR OR ORGANISATION>"
+repository-code: "https://github.com/<ORG>/audio-compression-results"
+license: MIT
+keywords:
+  - audio
+  - compression
+  - codec
+  - benchmark
+  - opus
+  - aac
+  - mp3
+  - vorbis
+  - flac

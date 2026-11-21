@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0.0",
+  "result_id": "ACR-003__aac_lc__128k",
+  "synthetic": true,
+  "source": {
+    "source_id": "ACR-003",
+    "filename": "ACR-003_conversational_dialogue.wav",
+    "sha256": "1e7d69042237ce7dbf7c40f72506d68de87102177c2f6dd15177613a1ac4765b"
+  },
+  "codec": {
+    "name": "aac_lc",
+    "encoder": "fdk-aac",
+    "encoder_version": "2.0.3",
+    "mode": "cbr",
+    "setting": "128k",
+    "nominal_bitrate_kbps": 128,
+    "command": "<placeholder> encode --codec aac_lc --setting 128k ACR-003_conversational_dialogue.wav"
+  },
+  "output": {
+    "path": "results/aac_lc/ACR-003/ACR-003__aac_lc__128k.m4a",
+    "container": "m4a",
+    "artifact_bytes": 2048,
+    "artifact_sha256": "c00ca21d65ad8648610f5a9f21b740fad60505f5f212877e269eba505d244606",
+    "estimated_encoded_bytes": 457867,
+    "measured_bitrate_kbps": 125.39,
+    "compression_ratio": 6.125
+  },
+  "quality": {
+    "peaq_odg": 0.0,
+    "visqol_mos": 4.658,
+    "snr_db": 36.2,
+    "bit_exact": false
+  },
+  "performance": {
+    "encode_speed_x_realtime": 89.8,
+    "decode_speed_x_realtime": 393.3
+  },
+  "environment": {
+    "host": "placeholder-runner-01",
+    "cpu": "TBD",
+    "os": "TBD"
+  },
+  "created_utc": "2026-11-21T09:25:54Z"
+}

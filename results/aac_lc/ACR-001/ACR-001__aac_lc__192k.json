@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0.0",
+  "result_id": "ACR-001__aac_lc__192k",
+  "synthetic": true,
+  "source": {
+    "source_id": "ACR-001",
+    "filename": "ACR-001_male_narration.wav",
+    "sha256": "98041490aac3c3d5c80a7483bef6dd82adbbb8f435177a224dc0a1f31198084d"
+  },
+  "codec": {
+    "name": "aac_lc",
+    "encoder": "fdk-aac",
+    "encoder_version": "2.0.3",
+    "mode": "cbr",
+    "setting": "192k",
+    "nominal_bitrate_kbps": 192,
+    "command": "<placeholder> encode --codec aac_lc --setting 192k ACR-001_male_narration.wav"
+  },
+  "output": {
+    "path": "results/aac_lc/ACR-001/ACR-001__aac_lc__192k.m4a",
+    "container": "m4a",
+    "artifact_bytes": 2048,
+    "artifact_sha256": "37672770d36dec0e810de5ce3701719b5eb5bc5fe592c09a520724fcf7f1d46a",
+    "estimated_encoded_bytes": 370741,
+    "measured_bitrate_kbps": 189.9,
+    "compression_ratio": 4.044
+  },
+  "quality": {
+    "peaq_odg": -0.046,
+    "visqol_mos": 4.618,
+    "snr_db": 34.07,
+    "bit_exact": false
+  },
+  "performance": {
+    "encode_speed_x_realtime": 92.7,
+    "decode_speed_x_realtime": 322.2
+  },
+  "environment": {
+    "host": "placeholder-runner-01",
+    "cpu": "TBD",
+    "os": "TBD"
+  },
+  "created_utc": "2026-11-21T09:04:19Z"
+}

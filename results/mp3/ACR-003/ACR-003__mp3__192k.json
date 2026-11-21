@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0.0",
+  "result_id": "ACR-003__mp3__192k",
+  "synthetic": true,
+  "source": {
+    "source_id": "ACR-003",
+    "filename": "ACR-003_conversational_dialogue.wav",
+    "sha256": "1e7d69042237ce7dbf7c40f72506d68de87102177c2f6dd15177613a1ac4765b"
+  },
+  "codec": {
+    "name": "mp3",
+    "encoder": "lame",
+    "encoder_version": "3.100",
+    "mode": "cbr",
+    "setting": "192k",
+    "nominal_bitrate_kbps": 192,
+    "command": "<placeholder> encode --codec mp3 --setting 192k ACR-003_conversational_dialogue.wav"
+  },
+  "output": {
+    "path": "results/mp3/ACR-003/ACR-003__mp3__192k.mp3",
+    "container": "mp3",
+    "artifact_bytes": 2048,
+    "artifact_sha256": "6204aa3aa03ac0f6182a4cefebc1a179b9aa46577c05a966d39911c24b2ed07e",
+    "estimated_encoded_bytes": 708112,
+    "measured_bitrate_kbps": 193.92,
+    "compression_ratio": 3.96
+  },
+  "quality": {
+    "peaq_odg": 0.0,
+    "visqol_mos": 4.727,
+    "snr_db": 37.33,
+    "bit_exact": false
+  },
+  "performance": {
+    "encode_speed_x_realtime": 55.6,
+    "decode_speed_x_realtime": 312.6
+  },
+  "environment": {
+    "host": "placeholder-runner-01",
+    "cpu": "TBD",
+    "os": "TBD"
+  },
+  "created_utc": "2026-11-21T09:28:22Z"
+}

@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0.0",
+  "result_id": "ACR-004__aac_lc__128k",
+  "synthetic": true,
+  "source": {
+    "source_id": "ACR-004",
+    "filename": "ACR-004_podcast_excerpt.wav",
+    "sha256": "83d31ce2e41f213467f73477713f252029348971a5dc6233bd0da9580fe041c2"
+  },
+  "codec": {
+    "name": "aac_lc",
+    "encoder": "fdk-aac",
+    "encoder_version": "2.0.3",
+    "mode": "cbr",
+    "setting": "128k",
+    "nominal_bitrate_kbps": 128,
+    "command": "<placeholder> encode --codec aac_lc --setting 128k ACR-004_podcast_excerpt.wav"
+  },
+  "output": {
+    "path": "results/aac_lc/ACR-004/ACR-004__aac_lc__128k.m4a",
+    "container": "m4a",
+    "artifact_bytes": 2048,
+    "artifact_sha256": "eee1a2d76d95d396474e4c78968e5230cae821b26b0059b949b4f09bc693bfe3",
+    "estimated_encoded_bytes": 278785,
+    "measured_bitrate_kbps": 129.43,
+    "compression_ratio": 5.934
+  },
+  "quality": {
+    "peaq_odg": -0.157,
+    "visqol_mos": 4.602,
+    "snr_db": 35.34,
+    "bit_exact": false
+  },
+  "performance": {
+    "encode_speed_x_realtime": 94.9,
+    "decode_speed_x_realtime": 456.9
+  },
+  "environment": {
+    "host": "placeholder-runner-01",
+    "cpu": "TBD",
+    "os": "TBD"
+  },
+  "created_utc": "2026-11-21T09:37:00Z"
+}

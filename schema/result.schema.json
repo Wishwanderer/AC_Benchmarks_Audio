@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/<ORG>/audio-compression-results/schema/result.schema.json",
+  "title": "Audio Compression Result Record",
+  "description": "Metadata and measurements for one encoded rendition of one corpus item.",
+  "type": "object",
+  "required": ["schema_version", "result_id", "synthetic", "source", "codec", "output", "quality", "performance", "created_utc"],
+  "properties": {
+    "schema_version": { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$" },
+    "result_id": { "type": "string", "pattern": "^ACR-\\d{3}__[a-z0-9_]+__[A-Za-z0-9]+$" },
+    "synthetic": { "type": "boolean", "description": "True if the record is placeholder data rather than a real measurement." },
+    "source": {
+      "type": "object",
+      "required": ["source_id", "filename", "sha256"],
+      "properties": {
+        "source_id": { "type": "string", "pattern": "^ACR-\\d{3}$" },
+        "filename": { "type": "string" },
+        "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" }
+      }
+    },
+    "codec": {
+      "type": "object",
+      "required": ["name", "encoder", "encoder_version", "mode", "setting"],
+      "properties": {
+        "name": { "type": "string", "enum": ["opus", "aac_lc", "mp3", "vorbis", "flac"] },
+        "encoder": { "type": "string" },
+        "encoder_version": { "type": "string" },
+        "mode": { "type": "string", "enum": ["cbr", "vbr", "abr", "lossless"] },
+        "setting": { "type": "string" },
+        "nominal_bitrate_kbps": { "type": ["number", "null"], "minimum": 0 },
+        "command": { "type": "string" }
+      }
+    },
+    "output": {
+      "type": "object",
+      "required": ["path", "container", "artifact_bytes", "artifact_sha256", "measured_bitrate_kbps", "compression_ratio"],
+      "properties": {
+        "path": { "type": "string", "pattern": "^results/" },
+        "container": { "type": "string" },
+        "artifact_bytes": { "type": "integer", "minimum": 0 },
+        "artifact_sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+        "estimated_encoded_bytes": { "type": "integer", "minimum": 0 },
+        "measured_bitrate_kbps": { "type": "number", "minimum": 0 },
+        "compression_ratio": { "type": "number", "exclusiveMinimum": 0 }
+      }
+    },
+    "quality": {
+      "type": "object",
+      "required": ["peaq_odg", "visqol_mos", "bit_exact"],
+      "properties": {
+        "peaq_odg": { "type": ["number", "null"], "minimum": -4, "maximum": 0 },
+        "visqol_mos": { "type": ["number", "null"], "minimum": 1, "maximum": 5 },
+        "snr_db": { "type": ["number", "null"] },
+        "bit_exact": { "type": "boolean" }
+      }
+    },
+    "performance": {
+      "type": "object",
+      "properties": {
+        "encode_speed_x_realtime": { "type": ["number", "null"], "minimum": 0 },
+        "decode_speed_x_realtime": { "type": ["number", "null"], "minimum": 0 }
+      }
+    },
+    "environment": { "type": "object" },
+    "created_utc": { "type": "string", "format": "date-time" }
+  }
+}
